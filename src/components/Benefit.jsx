@@ -12,14 +12,12 @@ const benefitContent = [
         title: 'Pelatihan Intensif',
         body: 'Belajar kompetensi teknis, soft skill, dan bahasa Inggris, yang dibuat oleh pakar industri.',
         img: benefit1,
-        themeColor: '#03B36B'
     },
     {
         id: 2,
         title: 'Akses Materi Selamanya',
         body: 'Dapatkan akses materi belajar gratis yang bisa diakses kapan saja.',
         img: benefit2,
-        themeColor: '#DA251C'
     },
     {
         id: 3,
@@ -51,11 +49,10 @@ export default function Benefit() {
                     alignItems="center" 
                     p="20px" 
                     border="1px solid"
-                    borderColor={benefit.themeColor}
-                    boxShadow={`8px 8px ${benefit.themeColor}`}>
+                    boxShadow="8px 8px">
                         <Image src={benefit.img} width="100px" height="100px" />
                         <CardBody textAlign="left">
-                            <Heading fontSize="2xl" color={benefit.themeColor}>{benefit.title}</Heading>
+                            <Heading fontSize="2xl">{benefit.title}</Heading>
                             <Text>{benefit.body}</Text>
                         </CardBody>
                     </Card>

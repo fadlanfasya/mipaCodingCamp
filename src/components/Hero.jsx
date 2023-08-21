@@ -39,7 +39,7 @@ export default function Hero() {
                     <GridItem colSpan="1">
                         <Card backgroundColor="#03B36B" boxShadow="8px 8px">
                             <CardBody>
-                                <Heading color="black" fontSize="5xl" textShadow="2px 4px white" >Code Your Way <br/>to Success</Heading>
+                                <Heading color="white" fontSize="5xl" textShadow="4px 4px black" >Code Your Way <br/>to Success</Heading>
                             </CardBody>
                         </Card>
                     </GridItem>

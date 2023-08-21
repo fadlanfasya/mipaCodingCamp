@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { accordionTheme } from './Accordion'
 
 const theme = extendTheme({
   fonts: {
@@ -7,6 +8,9 @@ const theme = extendTheme({
   },
   color: {
     greener: '#03B36B'
+  },
+  components: {
+    Accordion: accordionTheme
   }
 })
 

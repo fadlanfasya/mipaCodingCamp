@@ -21,6 +21,11 @@ export default function Navbar() {
             id: 3,
             name: 'Detail Program',
             url: '/detail'
+        },
+        {
+            id: 4,
+            name: 'Cara Mendaftar',
+            url: '/cara-mendaftar'
         }
     ]
 

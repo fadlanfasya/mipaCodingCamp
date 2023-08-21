@@ -1,4 +1,4 @@
-import { Container, Grid, GridItem, Heading, Image, OrderedList, ListItem, Flex, Card } from '@chakra-ui/react'
+import { Container, Grid, GridItem, Heading, Image, OrderedList, ListItem, Flex, Card, Button } from '@chakra-ui/react'
 import React from 'react'
 import bgImg from '../assets/siapa-background.svg'
 import '../style/OrderedList.css'
@@ -20,15 +20,16 @@ export default function Siapa() {
                 </Flex>
             </GridItem>
             <GridItem colSpan="1" marginRight="30px" maxHeight="80%">
-                <Card border="1px solid" padding="30px" boxShadow="8px 8px">
+                <Card border="1px solid" padding="30px" boxShadow="8px 8px" maxWidth="85%">
                 <Heading>Siapa Saja yang Bisa Ikut</Heading>
                 <Heading color="#03B36B">MIPA Coding Camp?</Heading>
                 <OrderedList className='ol' marginTop="20px">
                     {lists.map(list => (
-                        <ListItem fontWeight="bold" fontSize="2xl">{list.body}</ListItem>
+                        <ListItem fontWeight="bold" fontSize="xl">{list.body}</ListItem>
                     ))}
                 </OrderedList>
                 </Card>
+                <Button marginTop="20px" colorScheme='green'>Daftar Sekarang</Button>
             </GridItem>
         </Grid>
     </Container>
