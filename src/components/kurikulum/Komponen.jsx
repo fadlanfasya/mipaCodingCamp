@@ -10,7 +10,7 @@ const contents = [
     {
         id: 2,
         img: 'https://svgshare.com/i/whU.svg',
-        text: 'Online, Berbasis kelompok - Sesi yang dipimpin instruktur'
+        text: 'Berbasis kelompok - Sesi yang dipimpin instruktur'
     },
     {
         id: 3,

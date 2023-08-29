@@ -2,6 +2,7 @@ import { Container, Grid, GridItem, Heading, Image, OrderedList, ListItem, Flex,
 import React from 'react'
 import bgImg from '../assets/siapa-background.svg'
 import '../style/OrderedList.css'
+import { Link } from 'react-router-dom'
 
 const lists = [
     { body: 'Mahasiswa Fakultas FMIPA Unpad'},
@@ -29,7 +30,11 @@ export default function Siapa() {
                     ))}
                 </OrderedList>
                 </Card>
-                <Button marginTop="20px" colorScheme='green'>Daftar Sekarang</Button>
+                <Button marginTop="20px" colorScheme='green'>
+                    <Link to="/daftarsekarang">
+                        Daftar Sekarang
+                    </Link>
+                </Button>
             </GridItem>
         </Grid>
     </Container>

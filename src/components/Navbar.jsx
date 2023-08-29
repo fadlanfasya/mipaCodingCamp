@@ -10,22 +10,26 @@ export default function Navbar() {
         {
             id: 1,
             name: 'MIPA Coding Camp',
-            url: '/'
+            url: '/',
+            backgroundColor: 'white'
         },
         {
             id: 2,
             name: 'Kurikulum',
-            url: '/kurikulum'
+            url: '/kurikulum',
+            backgroundColor: 'white'
         },
         {
             id: 3,
             name: 'Detail Program',
-            url: '/detail'
+            url: '/detail',
+            backgroundColor: 'white'
         },
         {
             id: 4,
-            name: 'Cara Mendaftar',
-            url: '/cara-mendaftar'
+            name: 'Daftar Sekarang',
+            url: '/daftarsekarang',
+            backgroundColor: 'white'
         }
     ]
 
@@ -44,9 +48,8 @@ export default function Navbar() {
         <HStack spacing={8}>
             {navMenu.map(nav => {
                 return (
-                    <Button id='navbar' backgroundColor="white">
+                    <Button key={nav.id} id='navbar' backgroundColor={nav.backgroundColor}>
                         <NavLink 
-                        key={nav.id} 
                         to={nav.url} 
                         >{nav.name}</NavLink>
                     </Button>

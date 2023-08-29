@@ -31,7 +31,7 @@ export default function Kelas() {
                     apapun di kemudian hari.</Text>
             </GridItem>
             <GridItem>
-                <Accordion defaultIndex={[0]} allowToggle border="1px solid" borderRadius="8px" boxShadow="8px 8px">
+                <Accordion defaultIndex={[0]} border="1px solid" borderRadius="8px" boxShadow="8px 8px">
                     {contents.map(content => (
                     <AccordionItem key={content.id}>
                         <AccordionButton>
