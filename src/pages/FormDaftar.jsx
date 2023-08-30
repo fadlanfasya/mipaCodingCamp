@@ -9,8 +9,9 @@ export default function FormDaftar() {
     const [pilihanKelas1, setKelas1] = useState('')
     const [pilihanKelas2, setKelas2] = useState('')
     const [error, setError] = useState(null)
+    const [success, setSuccess] = useState(null)
 
-    const onClose = () => setError(null);
+    const onClose = () => setError(null) || setSuccess(null);
   
     const handleSubmit = async (e) => {
       e.preventDefault()
@@ -37,6 +38,7 @@ export default function FormDaftar() {
         setSemester('')
         setKelas1('')
         setKelas2('')
+        setSuccess('Berhasil Terdaftar')
         console.log('new participant added:', json)
       }
   
@@ -111,6 +113,23 @@ export default function FormDaftar() {
                     <AlertTitle>Error</AlertTitle>
                     <AlertDescription>
                         {error}
+                    </AlertDescription>
+                </Box>
+                <CloseButton
+                alignSelf='flex-start'
+                position='relative'
+                right={-1}
+                top={-1}
+                onClick={onClose}
+                />
+            </Alert>
+            }
+            {success && 
+            <Alert status='success' className="success" mt="30px">
+                <Box>
+                    <AlertTitle>Success</AlertTitle>
+                    <AlertDescription>
+                        {success}
                     </AlertDescription>
                 </Box>
                 <CloseButton
