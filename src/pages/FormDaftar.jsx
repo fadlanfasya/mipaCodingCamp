@@ -6,8 +6,8 @@ export default function FormDaftar() {
     const [name, setName] = useState('')
     const [jurusan, setJurusan] = useState('')
     const [semester, setSemester] = useState('')
-    const [kelas1, setKelas1] = useState('')
-    const [kelas2, setKelas2] = useState('')
+    const [pilihanKelas1, setKelas1] = useState('')
+    const [pilihanKelas2, setKelas2] = useState('')
     const [error, setError] = useState(null)
 
     const onClose = () => setError(null);
@@ -90,7 +90,7 @@ export default function FormDaftar() {
             </FormControl>
             <FormControl mb="20px">
                 <FormLabel>Pilihan Kelas Pertama :</FormLabel>
-                <Select placeholder=' ' onChange={(e) => setKelas1(e.target.value)} value={kelas1} border="1px solid" boxShadow="8px 8px">
+                <Select placeholder=' ' onChange={(e) => setKelas1(e.target.value)} value={pilihanKelas1} border="1px solid" boxShadow="8px 8px">
                     <option value='FullStack Engineering Path'>FullStack Engineering Path</option>
                     <option value='Mobile Engineering Path'>Mobile Engineering Path</option>
                     <option value='Data Analyst Path'>Data Analyst Path</option>
@@ -98,7 +98,7 @@ export default function FormDaftar() {
             </FormControl>
             <FormControl mb="20px">
                 <FormLabel>Pilihan Kelas Kedua :</FormLabel>
-                <Select placeholder=' ' onChange={(e) => setKelas2(e.target.value)} value={kelas2} border="1px solid" boxShadow="8px 8px">
+                <Select placeholder=' ' onChange={(e) => setKelas2(e.target.value)} value={pilihanKelas2} border="1px solid" boxShadow="8px 8px">
                     <option value='FullStack Engineering Path'>FullStack Engineering Path</option>
                     <option value='Mobile Engineering Path'>Mobile Engineering Path</option>
                     <option value='Data Analyst Path'>Data Analyst Path</option>
