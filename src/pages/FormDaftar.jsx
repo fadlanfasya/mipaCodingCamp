@@ -48,6 +48,40 @@ export default function FormDaftar() {
     <Container minWidth="50%" padding="30px" marginY="30px" borderRadius="15px" border="1px solid">
         <Heading mb="30px">Form Pendaftaran</Heading>
         <form onSubmit={handleSubmit}>
+        {error && 
+            <Alert status='error' className="error" mt="30px">
+                <Box>
+                    <AlertTitle>Error</AlertTitle>
+                    <AlertDescription>
+                        {error}
+                    </AlertDescription>
+                </Box>
+                <CloseButton
+                alignSelf='flex-start'
+                position='relative'
+                right={-1}
+                top={-1}
+                onClick={onClose}
+                />
+            </Alert>
+            }
+            {success && 
+            <Alert status='success' className="success" mt="30px">
+                <Box>
+                    <AlertTitle>Success</AlertTitle>
+                    <AlertDescription>
+                        {success}
+                    </AlertDescription>
+                </Box>
+                <CloseButton
+                alignSelf='flex-start'
+                position='relative'
+                right={-1}
+                top={-1}
+                onClick={onClose}
+                />
+            </Alert>
+            }
             <FormControl mb="20px">
                 <FormLabel>Masukan Email :</FormLabel>
                 <Input 
@@ -107,40 +141,6 @@ export default function FormDaftar() {
                 </Select>
             </FormControl>
             <Button type='submit' colorScheme="green">Submit</Button>
-            {error && 
-            <Alert status='error' className="error" mt="30px">
-                <Box>
-                    <AlertTitle>Error</AlertTitle>
-                    <AlertDescription>
-                        {error}
-                    </AlertDescription>
-                </Box>
-                <CloseButton
-                alignSelf='flex-start'
-                position='relative'
-                right={-1}
-                top={-1}
-                onClick={onClose}
-                />
-            </Alert>
-            }
-            {success && 
-            <Alert status='success' className="success" mt="30px">
-                <Box>
-                    <AlertTitle>Success</AlertTitle>
-                    <AlertDescription>
-                        {success}
-                    </AlertDescription>
-                </Box>
-                <CloseButton
-                alignSelf='flex-start'
-                position='relative'
-                right={-1}
-                top={-1}
-                onClick={onClose}
-                />
-            </Alert>
-            }
         </form>
     </Container>
   )
