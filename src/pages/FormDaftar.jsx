@@ -100,28 +100,10 @@ export default function FormDaftar() {
                 border="1px solid" boxShadow="8px 8px"
                 />
             </FormControl>
-            {/* <FormControl mb="20px">
-                <FormLabel>Pilihan Jurusan :</FormLabel>
-                <Select placeholder=' ' onChange={(e) => setJurusan(e.target.value)} value={jurusan} border="1px solid" boxShadow="8px 8px">
-                    <option value='Matematika'>Matematika</option>
-                    <option value='Fisika'>Fisika</option>
-                    <option value='Kimia'>Kimia</option>
-                    <option value='Biologi'>Biologi</option>
-                    <option value='Statistika'>Statistika</option>
-                    <option value='Geofisika'>Geofisika</option>
-                    <option value='Teknik Elektro'>Teknik Elektro</option>
-                    <option value='Teknik Informatika'>Teknik Informatika</option>
-                    <option value='Aktuaria'>Aktuaria</option>
-                    <option value='Teknologi Industri Kimia'>Teknologi Industri Kimia</option>
-                </Select>
-            </FormControl> */}
             <FormControl mb="20px">
-                <FormLabel>Status :</FormLabel>
-                <Select placeholder=' ' onChange={(e) => setKelas1(e.target.value)} value={pilihanKelas1} border="1px solid" boxShadow="8px 8px">
-                    <option value='Mahasiswa'>Mahasiswa</option>
-                    <option value='Lulusan S1/D3/Sederajat'>Lulusan S1/D3/Sederajat</option>
-                    <option value='Lulusan SMA/SMK/Sederajat'>Lulusan SMA/SMK/Sederajat</option>
-                </Select>
+                <FormLabel>Pilihan Jurusan :</FormLabel>
+                <Input type='text' onChange={(e) => setJurusan(e.target.value)} value={jurusan} border="1px solid" boxShadow="8px 8px">
+                </Input>
             </FormControl>
             <FormControl mb="20px">
                 <FormLabel>Masukan Semester :</FormLabel>
