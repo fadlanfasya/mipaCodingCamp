@@ -101,7 +101,7 @@ export default function FormDaftar() {
                 />
             </FormControl>
             <FormControl mb="20px">
-                <FormLabel>Pilihan Jurusan :</FormLabel>
+                <FormLabel>Masukan Jurusan :</FormLabel>
                 <Input type='text' onChange={(e) => setJurusan(e.target.value)} value={jurusan} border="1px solid" boxShadow="8px 8px">
                 </Input>
             </FormControl>
@@ -120,6 +120,7 @@ export default function FormDaftar() {
                     <option value='FullStack Engineering Path'>FullStack Engineering Path</option>
                     <option value='Mobile Engineering Path'>Mobile Engineering Path</option>
                     <option value='Data Analyst Path'>Data Analyst Path</option>
+                    <option value='Digital Marketing'>Digital Marketing</option>
                 </Select>
             </FormControl>
             <FormControl mb="20px">
@@ -128,6 +129,7 @@ export default function FormDaftar() {
                     <option value='FullStack Engineering Path'>FullStack Engineering Path</option>
                     <option value='Mobile Engineering Path'>Mobile Engineering Path</option>
                     <option value='Data Analyst Path'>Data Analyst Path</option>
+                    <option value='Digital Marketing'>Digital Marketing</option>
                 </Select>
             </FormControl>
             <Button type='submit' colorScheme="green">Submit</Button>

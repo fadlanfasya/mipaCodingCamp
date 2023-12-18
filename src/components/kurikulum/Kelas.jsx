@@ -16,6 +16,11 @@ const contents = [
         id: 3,
         title: 'Data Analyst Path',
         body: 'Untuk kamu Data Analyst masa depan, jika kamu mengambil jalur ini, kamu akan mendapatkan pelatihan intensif dengan mempelajari tentang SQL, Python, Eksperimentasi, Visualisasi data, dan lainnya.'
+    },
+    {
+        id: 4,
+        title: 'Digital Marketing',
+        body: 'Kelas ini akan membantu kamu menjadi seorang Digital Marketing yang akan melakukan promosi sebuah merek atau produk menggunakan media digital atau internet dengan tujuan untuk menarik konsumen atau calon konsumen secara cepat.'
     }
 ]
 

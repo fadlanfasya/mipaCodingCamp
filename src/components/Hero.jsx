@@ -19,7 +19,7 @@ export default function Hero() {
                     <CardBody>
                     <Text marginBottom="20px">
                         MIPA Coding Camp merupakan pelatihan kompetensi coding untuk mahasiswa
-                        FMIPA Unpad sebagai solusi untuk mengikuti industri teknologi yang berkembang
+                        Unpad sebagai solusi untuk mengikuti industri teknologi yang berkembang
                         cepat.
                     </Text>
                     <Text marginBottom="20px">

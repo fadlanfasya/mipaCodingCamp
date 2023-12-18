@@ -5,7 +5,7 @@ import '../style/OrderedList.css'
 import { Link } from 'react-router-dom'
 
 const lists = [
-    { body: 'Mahasiswa Fakultas FMIPA Unpad'},
+    { body: 'Mahasiswa Unpad'},
     { body: 'Menyukai Teknologi'},
     { body: 'Komitmen Dalam Mengikuti Kegiatan'},
     { body: 'Bersedia Mengikuti Seluruh Rangkaian Kegiatan'}
